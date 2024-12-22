@@ -19,7 +19,7 @@ folium.Choropleth(geo_data=geodata, name="covid-19 total confirm map", data=covi
                   columns=["fullname", "Cumulative Confirmed"], key_on="feature.properties.name",
                   fill_color='PuRd', nan_fill_color='white').add_to(m)
 folium.map.Marker(
-    location=[0, 0],  # 修改为您希望显示的具体位置
-    icon=folium.DivIcon(html='<div style="font-size: 24px; color: red;">杨承宇 6020224625</div>')  # 切换为您的姓名
+    location=[0, 0],  # 名字显示位置
+    icon=folium.DivIcon(html='<div style="font-size: 24px; color: red;">杨承宇 6020224625</div>')  # 姓名信息
 ).add_to(m)
 m.save("2.html")
